@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+
+  sonar:
+      image: sonarqube
+      container_name: sonar_qube
+      ports:
+          - "9000:9000"
+      # depends_on:
+      #     - sonardb
+      # environment:
+      #     - SONARQUBE_JDBC_URL=jdbc:mysql://sonardb:3306/sonar?useUnicode=true&characterEncoding=utf8
+      #     - SONARQUBE_JDBC_USERNAME=sonar
+      #     - SONARQUBE_JDBC_PASSWORD=sonarmysql
